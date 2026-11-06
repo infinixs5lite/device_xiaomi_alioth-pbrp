@@ -74,3 +74,7 @@ TARGET_RECOVERY_QCOM_RTC_FIX := true
 
 # Device labels and permissions for direct recovery hardware access.
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/recovery
+
+# Torch
+PB_TORCH_PATH := "sys/devices/platform/flashlights_ocp8132/torch_brightness"
+PB_TORCH_MAX_BRIGHTNESS := 1
