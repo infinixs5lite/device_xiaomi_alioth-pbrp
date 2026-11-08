@@ -3,7 +3,7 @@
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 
 # mount point          fstype  device                                        device2              flags
-/storage       	       	ext4    /data/media/0                  		     		 	   flags=backup=1;display="Internal Storage";usermrf;fsflags="bind";removable
+/userdata_default             emmc           /dev/block/bootdevice/by-name/userdata                     flags=display="Userdata default";flashimg;backup=1;wipeingui
 
 # Boot
 /boot                  	emmc    /dev/block/bootdevice/by-name/boot                                 flags=backup=1;slotselect;flashimg=1;wipeingui=1
@@ -25,7 +25,7 @@
 /product             ext4      /dev/block/mapper/product
 /system_ext_image	    emmc  	/dev/block/mapper/system_ext              flags=backup=1;flashimg=1;display="System_ext Image";wipeingui=1;slotselect
 /system_ext            ext4      /dev/block/mapper/system_ext
-/splash                  	ext4    /dev/block/bootdevice/by-name/splash                                 flags=backup=1;display="Splash";flashimg=1;wipeingui=1
+/splash                  	emmc    /dev/block/bootdevice/by-name/splash                                 flags=backup=1;display="Splash";flashimg=1;wipeingui=1
 /abl                  	ext4    /dev/block/bootdevice/by-name/abl                                 flags=backup=1;display="Abl";flashimg=1;wipeingui=1
 /featenabler                  	ext4    /dev/block/bootdevice/by-name/featenabler                                flags=backup=1;display="Featenabler";flashimg=1;wipeingui=1
 
