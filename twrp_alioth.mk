@@ -2,8 +2,9 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, device/xiaomi/alioth/device.mk)
-$(call inherit-product, vendor/pb/config/common.mk)
-PRODUCT_NAME := pb_alioth
+$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, device/xiaomi/alioth/fox_alioth.mk)
+PRODUCT_NAME := twrp_alioth
 PRODUCT_DEVICE := alioth
 PRODUCT_BRAND := POCO
 PRODUCT_MANUFACTURER := Xiaomi
