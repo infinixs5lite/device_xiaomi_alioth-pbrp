@@ -75,7 +75,8 @@ TARGET_RECOVERY_QCOM_RTC_FIX := true
 # Device labels and permissions for direct recovery hardware access.
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/recovery
 
-# 12.1 manifest requirements
+# Broken stuff
+ALLOW_MISSING_DEPENDENCIES := true
 TARGET_SUPPORTS_64_BIT_APPS := true
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
