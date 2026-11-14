@@ -13,7 +13,7 @@ PRODUCT_PACKAGES += qcom_decrypt qcom_decrypt_fbe
 ALLOW_MISSING_DEPENDENCIES := true
 
 PRODUCT_PACKAGES += alioth_recovery_0 alioth_recovery_1 alioth_recovery_2 alioth_recovery_3 alioth_recovery_4 alioth_recovery_5 alioth_recovery_6 alioth_recovery_7 alioth_recovery_8 alioth_recovery_9 alioth_recovery_10 alioth_recovery_11 alioth_recovery_12 alioth_recovery_13 alioth_recovery_14 alioth_recovery_15 alioth_recovery_16 alioth_recovery_17 alioth_recovery_18 alioth_recovery_19 alioth_recovery_20 alioth_recovery_21 alioth_recovery_22 alioth_recovery_23 alioth_recovery_24 alioth_recovery_25 alioth_recovery_26 alioth_recovery_27 alioth_recovery_28 alioth_recovery_29 alioth_recovery_30 alioth_recovery_31
-# PBRP copies recovery/root as the private recovery overlay.
+# OFRP copies recovery/root as the private recovery overlay.
 
 # Official OFRP recovery-library inclusion/relink convention.
 PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/commonsys-intf/display
