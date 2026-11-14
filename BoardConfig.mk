@@ -62,6 +62,8 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TARGET_USES_MKE2FS := true
+TW_INCLUDE_FASTBOOTD := true
+TW_SUPPORT_INPUT_AIDL_HAPTICS := true
 
 BOARD_ROOT_EXTRA_FOLDERS := bluetooth dsp firmware persist
 BOARD_SUPER_PARTITION_SIZE := 9126805504
@@ -76,11 +78,9 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # Restore Qualcomm RTC offset from the decrypted time-service state.
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 
-# Device labels and permissions for direct recovery hardware access.
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/recovery
-
 # Broken stuff
 ALLOW_MISSING_DEPENDENCIES := true
+BUILD_BROKEN_USES_NETWORK := true
 TARGET_SUPPORTS_64_BIT_APPS := true
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
