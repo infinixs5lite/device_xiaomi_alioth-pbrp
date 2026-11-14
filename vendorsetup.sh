@@ -84,6 +84,7 @@ if [ "$1" = "$FDEVICE" ] || [ "$FOX_BUILD_DEVICE" = "$FDEVICE" ];
     export TARGET_DEVICE_ALT="alioth"
 
     # Binaries & Tools
+    export ALLOW_MISSING_DEPENDENCIES=true
     export FOX_USE_BUSYBOX_BINARY=1
     export FOX_USE_BASH_SHELL=1
     export FOX_USE_TAR_BINARY=1
