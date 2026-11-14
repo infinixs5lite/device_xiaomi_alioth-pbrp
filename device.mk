@@ -19,12 +19,6 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
     android.hardware.health-service.qti_recovery
 
-# Minimal OFRP manifest omits non-recovery framework/test modules.
-ALLOW_MISSING_DEPENDENCIES := true
-
-PRODUCT_PACKAGES += alioth_recovery_0 alioth_recovery_1 alioth_recovery_2 alioth_recovery_3 alioth_recovery_4 alioth_recovery_5 alioth_recovery_6 alioth_recovery_7 alioth_recovery_8 alioth_recovery_9 alioth_recovery_10 alioth_recovery_11 alioth_recovery_12 alioth_recovery_13 alioth_recovery_14 alioth_recovery_15 alioth_recovery_16 alioth_recovery_17 alioth_recovery_18 alioth_recovery_19 alioth_recovery_20 alioth_recovery_21 alioth_recovery_22 alioth_recovery_23 alioth_recovery_24 alioth_recovery_25 alioth_recovery_26 alioth_recovery_27 alioth_recovery_28 alioth_recovery_29 alioth_recovery_30 alioth_recovery_31
-# OFRP copies recovery/root as the private recovery overlay.
-
 # Official OFRP recovery-library inclusion/relink convention.
 PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/commonsys-intf/display
 TARGET_RECOVERY_DEVICE_MODULES += android.system.suspend-V1-ndk android.hardware.gatekeeper@1.0 android.hardware.keymaster@4.0 android.hardware.keymaster@4.1 android.system.wifi.keystore@1.0 libion libxml2 libdisplayconfig.qti vendor.display.config@1.0 vendor.display.config@2.0
