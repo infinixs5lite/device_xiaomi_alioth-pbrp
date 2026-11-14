@@ -8,6 +8,16 @@ PRODUCT_PROPERTY_OVERRIDES += ro.virtual_ab.enabled=true
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_PACKAGES += qcom_decrypt qcom_decrypt_fbe
 
+# fastbootd
+PRODUCT_PACKAGES += \
+	android.hardware.fastboot@1.0-impl-mock \
+	android.hardware.fastboot@1.0-impl-mock.recovery \
+	fastbootd
+
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.qti \
+    android.hardware.health-service.qti_recovery
 
 # Minimal OFRP manifest omits non-recovery framework/test modules.
 ALLOW_MISSING_DEPENDENCIES := true
@@ -30,3 +40,7 @@ PRODUCT_PROPERTY_OVERRIDES += vendor.gatekeeper.disable_spu=true vendor.usb.use_
 # Device-specific GUI capabilities; never applies to other OFRP targets.
 PRODUCT_PROPERTY_OVERRIDES += ro.fox.alioth_safe_ui=1
 PRODUCT_PROPERTY_OVERRIDES += ro.fox.display_refresh_rate=120
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service
