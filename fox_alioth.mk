@@ -18,7 +18,7 @@ OF_CLOCK_POS := 1
 OF_OPTIONS_LIST_NUM := 9
 
 # Quick backup (Boot, sensor data)
-OF_QUICK_BACKUP_LIST := /boot;/persist_image;
+OF_QUICK_BACKUP_LIST := /boot;/vendor_boot;
 
 # Flashlight & LEDs
 OF_FL_PATH1	:= sys/devices/platform/flashlights_ocp8132/torch_brightness
